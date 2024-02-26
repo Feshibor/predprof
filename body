@@ -1,0 +1,23 @@
+
+f=open("1.txt",encoding="utf-8")
+f=f.readlines()
+a=[]
+pla="st"
+while pla!="stop": "" задание 3
+    pla = str(input())
+    coi=0
+    for i in range(1, len(f)):
+        sh, pl, co, di = f[i].split("*")
+        if sh==pla:
+            print("Корабль", sh ,"был отправлен с планеты:" ,pl," и его направление движения было:",di)
+            coi=1
+    if coi==0:
+        print("error.. er.. ror..")""конец задание 3
+for i in range(1,len(f)):""задание 2
+    sh,pl,co,di=f[i].split("*")
+    sh=str(sh)
+    sh1,sh2=sh.split("-")
+    a.append(int(sh2))
+a.sort()""зачем придумывать сортировку если есть sort да еще и 2 цыкла использовать нельзя
+print(a[:10])#ответ на 2 задачу
+
